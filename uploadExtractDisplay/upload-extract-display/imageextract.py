@@ -9,6 +9,7 @@ def unzipDisplay():
 
     file_name = "./pokemonUnite.zip"
     zip=ZipFile(file_name, 'r')
+    zip.extractall()
 
     for i in range(len(zip.namelist())):
         file_in_zip = zip.namelist()[i]
@@ -37,6 +38,7 @@ def unzipDisplay():
 
 # file_name = "pokemonUnite.zip"
 # zip=ZipFile(file_name, 'r')
+# zip.extractall()
 
 # for i in range(len(zip.namelist())):
 #     file_in_zip = zip.namelist()[i]
